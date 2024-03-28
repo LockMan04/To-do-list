@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>To do list</h2>
+    <div class="input-area">
+      <input type="text" name="task" id="task" placeholder="Enter task" />
+      <span class="error-input hidden">Please enter a task</span>
+      <button type="submit" id="add">Add</button>
+    </div>
+    <ul class="show-list">
+      <li>
+        <span>Đi chợ</span>
+        <div class="close" onclick="deleteTask(this)">x</div>
+      </li>
+      <li>
+        <span>Kiểm tra thu chi tháng này</span>
+        <div class="close" onclick="deleteTask(this)">x</div>
+      </li>
+      <li>
+        <span>Uống nước</span>
+        <div class="close" onclick="deleteTask(this)">x</div>
+      </li>
+      <li class="checked">
+        <span>Hoàn thành dự án to-do-list</span>
+        <div class="close" onclick="deleteTask(this)">x</div>
+      </li>
+      <li>
+        <span>Đi gym</span>
+        <div class="close" onclick="deleteTask(this)">x</div>
+      </li>
+      <li>
+        <span>Đi lên phường trình báo</span>
+        <div class="close" onclick="deleteTask(this)">x</div>
+      </li>
+    </ul>
+
+    <div class="removeAll" onclick="deleteAll()">X</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
